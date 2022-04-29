@@ -1,0 +1,28 @@
+
+.container-list-card{
+    width: 55%;
+    margin-left: 2rem;
+}
+
+.list-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+    .container-list-card{
+        grid-template-columns: repeat(1, 1fr);
+        position: absolute;
+        top: 65%;
+        width: 100%;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .list-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
